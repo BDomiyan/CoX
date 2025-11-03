@@ -94,6 +94,10 @@ android {
         }
     }
     buildTypes {
+        getByName("debug") {
+            // Disable stripping debug symbols for debug builds
+            packaging.jniLibs.keepDebugSymbols.add("**/*.so")
+        }
         getByName("release") {
             isMinifyEnabled = false
         }
