@@ -16,7 +16,7 @@ struct UserListView: View {
                 contentView
             }
             .navigationTitle(Strings.appName)
-            .navigationBarTitleDisplayMode(.large)
+            .navigationBarTitleDisplayMode(.inline)
             .navigationDestination(item: $selectedUser) { user in
                 UserDetailView(user: user)
             }
