@@ -8,13 +8,6 @@ The project follows **Clean Architecture** and uses **MVVM** in the presentation
 
 ---
 
-## Structure
-
-/ (root)
-├─ shared/        -> Domain, Data, Utilities (Kotlin Multiplatform)
-├─ composeApp/    -> Compose Multiplatform UI (Android + iOS)
-└─ iosApp/        -> Native iOS app (SwiftUI + shared module)
-
 ### Shared Module
 
 * Domain models and use cases (`User`, `GetUsersUseCase`)
